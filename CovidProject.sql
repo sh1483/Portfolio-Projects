@@ -150,7 +150,7 @@ FROM #PercentPopulationVaccinated
 
 
 
--- Creating View to store data for later visualizations (NOT WORKING)
+-- Creating View to store data for later visualizations
 
 CREATE VIEW RollingVacCount AS
 
