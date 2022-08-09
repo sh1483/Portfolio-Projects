@@ -1,34 +1,20 @@
+#Counting and returning the number as long as it meets the parameter
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
 
-numbers = list(range(1,21))
-print(numbers)
+#Using CONTINUE in a loop
+current_number = 0
+while current_number < 10:
+    current_number += 1
+    if current_number % 2 == 0:
+        continue
 
-for value in range(1,21):
-	print(value)
+    print(current_number)
 
-one_million = list(range(1,1_000_001))
-#print(one_million)#commenting this out before printing the min, max, and sum speeds things up
-
-print(min(one_million))
-print(max(one_million))
-print(sum(one_million))	
-
-for value in range(1,21,2):#odd numbers 1-20
-	print(value)
-
-#multiples of 3
-for value in range(3,31,3):
-	print(value)
-
-#cubes
-cubes = []
-for value in range(1,31):
-	cubes.append(value**3)
-print(cubes)
-
-#List Comprehension of cubes
-cubes = [value**3 for value in range(1,31)]#same as above, but more efficient coding
-print(cubes)
-
-
-
-
+#Avoiding inifinite loops
+x = 1
+while x <= 5:
+    print(x)
+    x += 1 #This line keeps the code from running endlessly
